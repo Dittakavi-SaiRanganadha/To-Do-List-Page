@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('How-to-create-a-project-task-list-cover.png') no-repeat center center fixed; /* Local file */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(183, 85, 229, 0.9); /* Slight transparency for contrast */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(120, 173, 238, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#new-task {
+    width: 40%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#task-date {
+    width: 30%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li .edit, li .delete, li .complete {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+li .edit:hover, li .delete:hover, li .complete:hover {
+    color: red;
+}
